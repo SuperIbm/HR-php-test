@@ -5,12 +5,12 @@
 @section('content')
     @include("_blocks._message")
 
-    {{ Form::model($Order, ['url' => route("order.update", $Order->id), 'method' => 'post', 'name' => 'signup']) }}
+    {{ Form::model($Order, ['url' => route("order.update", $Order->id), 'method' => 'post', 'name' => 'order_edit']) }}
         <div class="h1">Информация о заказе</div>
         <div class="row">
             <div class="form-group col-4">
                 {{ Form::label('client_email', "E-mail клиента") }}:<span class="form-input-require"></span>
-                {{ Form::text("client_email", null, ['class' => 'form-control', 'required' => true]) }}
+                {{ Form::email("client_email", null, ['class' => 'form-control', 'required' => true]) }}
             </div>
             <div class="form-group col-4">
                 {{ Form::label('partner_id', "Партнер") }}:<span class="form-input-require"></span>
@@ -57,4 +57,6 @@
             {{ Form::reset('Сброс', ['class' => 'btn btn-secondary']) }}
         </div>
     {{ Form::close() }}
+
+    <script src="{{ mix("js/order_edit.js") }}"></script>
 @endsection

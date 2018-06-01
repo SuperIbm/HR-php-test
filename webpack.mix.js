@@ -26,7 +26,7 @@ mix.webpackConfig
 );
 
 mix
-.js('resources/assets/js/order/index.js', 'public/js/order_index.js')
+.js('resources/assets/js/order/edit.js', 'public/js/order_edit.js')
 .sass('resources/assets/sass/app.scss', 'public/css')
 .extract
 (

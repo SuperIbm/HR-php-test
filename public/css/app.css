@@ -10419,3 +10419,10 @@ a.text-dark:focus {
   line-height: 50%;
 }
 
+LABEL.error {
+  color: #ff0000;
+  font-size: 0.8rem;
+  line-height: 0.9rem;
+  margin-top: 5px;
+}
+

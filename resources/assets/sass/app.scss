@@ -7,3 +7,12 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+.form-input-require::before
+{
+content: "*";
+color: #ff0000;
+font-size: 1.4rem;
+padding-left: 5px;
+line-height: 50%;
+}

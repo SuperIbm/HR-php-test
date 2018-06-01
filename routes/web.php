@@ -13,7 +13,28 @@
 
 Route::get('/',
     [
-        'uses' => 'ControllerWeather@index',
-        'as' => 'weather::index'
+        'uses' => 'WeatherController@index',
+        'as' => 'weather.index'
+    ]
+);
+
+Route::get('/order/',
+    [
+        'uses' => 'OrderController@index',
+        'as' => 'order.index'
+    ]
+);
+
+Route::get('/order/edit/{id}',
+    [
+        'uses' => 'OrderController@edit',
+        'as' => 'order.edit'
+    ]
+);
+
+Route::post('/order/update/{id}',
+    [
+        'uses' => 'OrderController@update',
+        'as' => 'order.update'
     ]
 );

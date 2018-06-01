@@ -18,7 +18,7 @@ abstract class Weather
 	 * Получение прогноза погоды по широте и долготе.
 	 * @param double $lat Широта.
 	 * @param double $lon Долгота.
-	 * @return array Массив данных запрашиваемой погоды.
+	 * @return array|bool Массив данных запрашиваемой погоды.
 	 * @since 1.0
 	 * @version 1.0
 	 */

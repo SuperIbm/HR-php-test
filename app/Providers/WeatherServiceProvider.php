@@ -37,7 +37,7 @@ class WeatherServiceProvider extends ServiceProvider
 		);
 
         Weather::extend('yandex',
-			function($app)
+			function()
 			{
 				return new WeatherYandex();
 			}

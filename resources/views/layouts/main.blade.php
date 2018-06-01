@@ -15,7 +15,7 @@
     </head>
 
     <body>
-        <main role="main" class="container">
+        <main role="main" class="container mt-5">
             @yield('content')
         </main>
     </body>

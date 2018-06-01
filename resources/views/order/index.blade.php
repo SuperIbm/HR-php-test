@@ -1,8 +1,9 @@
 @extends('layouts.main')
 
-@section("title", "Orders")
+@section("title", "Заказы")
 
 @section('content')
+    <div class="h1">Заказы</div>
     <div class="table-responsive">
         <table class="table table-bordered table-striped">
             <thead>

@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section("title", "Weather")
+@section("title", "Погода в Брянске")
 
 @section('content')
     <div class="row no-gutters">
@@ -9,7 +9,7 @@
         </div>
         <div class="col-4" style="font-size: 270%; font-weight: bold;">
             @if($weather["temp"] > 0)
-                +{{ $weather["temp"] }}
+                +{{ $weather["temp"] }}<sup>0</sup>
             @elseif($weather["temp"] == 0)
                 {{ $weather["temp"] }}
             @else
